@@ -1,0 +1,29 @@
+platform :ios, '8.0'
+use_frameworks!
+
+react_native = {:git => 'https://github.com/getsiphon/react-native.git', :commit => '4d0e29a'}
+
+target 'Siphon_Example', :exclusive => true do
+  pod 'React', react_native
+  pod 'React/ART', react_native
+  pod 'React/RCTActionSheet', react_native
+  pod 'React/RCTGeolocation', react_native
+  pod 'React/RCTImage', react_native
+  pod 'React/RCTNetwork', react_native
+  pod 'React/RCTPushNotification', react_native
+  pod 'React/RCTSettings', react_native
+  pod 'React/RCTText', react_native
+  pod 'React/RCTVibration', react_native
+  pod 'React/RCTWebSocket', react_native
+  pod 'React/RCTLinkingIOS', react_native
+
+  pod 'Mixpanel', '2.9.0'
+  pod 'SSZipArchive', '0.3.3'
+  pod 'SocketRocket', '0.4.2'
+  pod 'Siphon', :path => '../Siphon.dev.podspec'
+end
+
+target 'Siphon_Tests', :exclusive => true do
+  pod 'Specta'
+  pod 'Expecta'
+end

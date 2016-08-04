@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		41EEE6781C4F933800F4C543 /* UniversalLib */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 41EEE6791C4F933800F4C543 /* Build configuration list for PBXAggregateTarget "UniversalLib" */;
+			buildPhases = (
+				41EEE67C1C4F945100F4C543 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = UniversalLib;
+			productName = UniversalLib;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		415EC3501C7B412A003DF7B9 /* SPUpdatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 415EC34F1C7B412A003DF7B9 /* SPUpdatingView.m */; };
+		415EC3541C7B414A003DF7B9 /* SPDevelopmentAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415EC3531C7B414A003DF7B9 /* SPDevelopmentAppViewController.m */; };
+		415EC3551C7B44CF003DF7B9 /* SPDevelopmentAppViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 415EC3511C7B4137003DF7B9 /* SPDevelopmentAppViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		415EC3841C7BC16A003DF7B9 /* SPAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 415EC3831C7BC16A003DF7B9 /* SPAlertView.m */; };
+		415EC3891C7BC179003DF7B9 /* SPBorderedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 415EC3871C7BC179003DF7B9 /* SPBorderedButton.m */; };
+		418D92821C4E8B65006DAFE8 /* SPBundleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D92631C4E8B65006DAFE8 /* SPBundleManager.m */; };
+		418D92831C4E8B65006DAFE8 /* SPBundleUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D92651C4E8B65006DAFE8 /* SPBundleUtils.m */; };
+		418D92841C4E8B65006DAFE8 /* FileHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D92681C4E8B65006DAFE8 /* FileHash.m */; };
+		418D92851C4E8B65006DAFE8 /* SPFileSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D926A1C4E8B65006DAFE8 /* SPFileSystem.m */; };
+		418D92861C4E8B65006DAFE8 /* SPApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D926D1C4E8B65006DAFE8 /* SPApiClient.m */; };
+		418D92871C4E8B65006DAFE8 /* SPLogStreamClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D926F1C4E8B65006DAFE8 /* SPLogStreamClient.m */; };
+		418D92881C4E8B65006DAFE8 /* SPNotificationStreamClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D92711C4E8B65006DAFE8 /* SPNotificationStreamClient.m */; };
+		418D92891C4E8B65006DAFE8 /* SPPollingClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D92731C4E8B65006DAFE8 /* SPPollingClient.m */; };
+		418D928A1C4E8B65006DAFE8 /* SPAppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D92751C4E8B65006DAFE8 /* SPAppManager.m */; };
+		418D928B1C4E8B65006DAFE8 /* SPAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D92771C4E8B65006DAFE8 /* SPAppViewController.m */; };
+		418D928C1C4E8B65006DAFE8 /* SPConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D92791C4E8B65006DAFE8 /* SPConstants.m */; };
+		418D928D1C4E8B65006DAFE8 /* RNMixpanelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D927C1C4E8B65006DAFE8 /* RNMixpanelManager.m */; };
+		418D928E1C4E8B65006DAFE8 /* SPAppView.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D927F1C4E8B65006DAFE8 /* SPAppView.m */; };
+		418D928F1C4E8B65006DAFE8 /* SPLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D92811C4E8B65006DAFE8 /* SPLoadingView.m */; };
+		41EEE67D1C4FB70C00F4C543 /* SPAppViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 418D92761C4E8B65006DAFE8 /* SPAppViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DA715F0B3C632E2DA940CAA /* Pods_SiphonSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC2CED59E3B45EAA4ECA1473 /* Pods_SiphonSDK.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		418D92231C4E8417006DAFE8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		41152B341C5107BB005A718F /* sandbox-header */ = {isa = PBXFileReference; lastKnownFileType = text; path = "sandbox-header"; sourceTree = "<group>"; };
+		415EC34D1C7B411E003DF7B9 /* SPUpdatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPUpdatingView.h; sourceTree = "<group>"; };
+		415EC34F1C7B412A003DF7B9 /* SPUpdatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPUpdatingView.m; sourceTree = "<group>"; };
+		415EC3511C7B4137003DF7B9 /* SPDevelopmentAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDevelopmentAppViewController.h; sourceTree = "<group>"; };
+		415EC3531C7B414A003DF7B9 /* SPDevelopmentAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDevelopmentAppViewController.m; sourceTree = "<group>"; };
+		415EC3811C7BC15F003DF7B9 /* SPAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAlertView.h; sourceTree = "<group>"; };
+		415EC3831C7BC16A003DF7B9 /* SPAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAlertView.m; sourceTree = "<group>"; };
+		415EC3861C7BC179003DF7B9 /* SPBorderedButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBorderedButton.h; sourceTree = "<group>"; };
+		415EC3871C7BC179003DF7B9 /* SPBorderedButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBorderedButton.m; sourceTree = "<group>"; };
+		417969D01CC11B5F005A22C8 /* header-dev */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "header-dev"; sourceTree = "<group>"; };
+		417969D11CC11B66005A22C8 /* sandbox-header-dev */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "sandbox-header-dev"; sourceTree = "<group>"; };
+		418D92251C4E8417006DAFE8 /* libSiphonSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSiphonSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		418D92621C4E8B65006DAFE8 /* SPBundleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBundleManager.h; sourceTree = "<group>"; };
+		418D92631C4E8B65006DAFE8 /* SPBundleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBundleManager.m; sourceTree = "<group>"; };
+		418D92641C4E8B65006DAFE8 /* SPBundleUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPBundleUtils.h; sourceTree = "<group>"; };
+		418D92651C4E8B65006DAFE8 /* SPBundleUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPBundleUtils.m; sourceTree = "<group>"; };
+		418D92671C4E8B65006DAFE8 /* FileHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileHash.h; sourceTree = "<group>"; };
+		418D92681C4E8B65006DAFE8 /* FileHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileHash.m; sourceTree = "<group>"; };
+		418D92691C4E8B65006DAFE8 /* SPFileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPFileSystem.h; sourceTree = "<group>"; };
+		418D926A1C4E8B65006DAFE8 /* SPFileSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPFileSystem.m; sourceTree = "<group>"; };
+		418D926C1C4E8B65006DAFE8 /* SPApiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPApiClient.h; sourceTree = "<group>"; };
+		418D926D1C4E8B65006DAFE8 /* SPApiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPApiClient.m; sourceTree = "<group>"; };
+		418D926E1C4E8B65006DAFE8 /* SPLogStreamClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLogStreamClient.h; sourceTree = "<group>"; };
+		418D926F1C4E8B65006DAFE8 /* SPLogStreamClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLogStreamClient.m; sourceTree = "<group>"; };
+		418D92701C4E8B65006DAFE8 /* SPNotificationStreamClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNotificationStreamClient.h; sourceTree = "<group>"; };
+		418D92711C4E8B65006DAFE8 /* SPNotificationStreamClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNotificationStreamClient.m; sourceTree = "<group>"; };
+		418D92721C4E8B65006DAFE8 /* SPPollingClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPPollingClient.h; sourceTree = "<group>"; };
+		418D92731C4E8B65006DAFE8 /* SPPollingClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPPollingClient.m; sourceTree = "<group>"; };
+		418D92741C4E8B65006DAFE8 /* SPAppManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAppManager.h; sourceTree = "<group>"; };
+		418D92751C4E8B65006DAFE8 /* SPAppManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAppManager.m; sourceTree = "<group>"; };
+		418D92761C4E8B65006DAFE8 /* SPAppViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAppViewController.h; sourceTree = "<group>"; };
+		418D92771C4E8B65006DAFE8 /* SPAppViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAppViewController.m; sourceTree = "<group>"; };
+		418D92781C4E8B65006DAFE8 /* SPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPConstants.h; sourceTree = "<group>"; };
+		418D92791C4E8B65006DAFE8 /* SPConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPConstants.m; sourceTree = "<group>"; };
+		418D927B1C4E8B65006DAFE8 /* RNMixpanelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNMixpanelManager.h; sourceTree = "<group>"; };
+		418D927C1C4E8B65006DAFE8 /* RNMixpanelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNMixpanelManager.m; sourceTree = "<group>"; };
+		418D927E1C4E8B65006DAFE8 /* SPAppView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAppView.h; sourceTree = "<group>"; };
+		418D927F1C4E8B65006DAFE8 /* SPAppView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAppView.m; sourceTree = "<group>"; };
+		418D92801C4E8B65006DAFE8 /* SPLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLoadingView.h; sourceTree = "<group>"; };
+		418D92811C4E8B65006DAFE8 /* SPLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLoadingView.m; sourceTree = "<group>"; };
+		418D92911C4E90F9006DAFE8 /* pre-header */ = {isa = PBXFileReference; lastKnownFileType = text; path = "pre-header"; sourceTree = "<group>"; };
+		418D92951C4E9173006DAFE8 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		4193E5571C5BBB22005563CE /* header */ = {isa = PBXFileReference; lastKnownFileType = text; path = header; sourceTree = "<group>"; };
+		45B17B076767F9EAA6D5813E /* Pods-SiphonSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiphonSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SiphonSDK/Pods-SiphonSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		58CE61E3DECCCE9DA1691EE9 /* Pods-SiphonSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SiphonSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-SiphonSDK/Pods-SiphonSDK.release.xcconfig"; sourceTree = "<group>"; };
+		CC2CED59E3B45EAA4ECA1473 /* Pods_SiphonSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SiphonSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		418D92221C4E8417006DAFE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DA715F0B3C632E2DA940CAA /* Pods_SiphonSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03D412A2A86445B6F084F37E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC2CED59E3B45EAA4ECA1473 /* Pods_SiphonSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		415EC3851C7BC179003DF7B9 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				415EC3861C7BC179003DF7B9 /* SPBorderedButton.h */,
+				415EC3871C7BC179003DF7B9 /* SPBorderedButton.m */,
+			);
+			name = components;
+			path = SiphonSDK/components;
+			sourceTree = "<group>";
+		};
+		418D921C1C4E8417006DAFE8 = {
+			isa = PBXGroup;
+			children = (
+				415EC3851C7BC179003DF7B9 /* components */,
+				418D92271C4E8417006DAFE8 /* SiphonSDK */,
+				418D92261C4E8417006DAFE8 /* Products */,
+				E88E46CA1D7934AD414BAF34 /* Pods */,
+				03D412A2A86445B6F084F37E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		418D92261C4E8417006DAFE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				418D92251C4E8417006DAFE8 /* libSiphonSDK.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		418D92271C4E8417006DAFE8 /* SiphonSDK */ = {
+			isa = PBXGroup;
+			children = (
+				418D92901C4E90EB006DAFE8 /* Supporting Files */,
+				418D92611C4E8B65006DAFE8 /* bundle */,
+				418D92661C4E8B65006DAFE8 /* file-utils */,
+				418D926B1C4E8B65006DAFE8 /* network */,
+				418D92741C4E8B65006DAFE8 /* SPAppManager.h */,
+				418D92751C4E8B65006DAFE8 /* SPAppManager.m */,
+				418D92761C4E8B65006DAFE8 /* SPAppViewController.h */,
+				418D92771C4E8B65006DAFE8 /* SPAppViewController.m */,
+				415EC3511C7B4137003DF7B9 /* SPDevelopmentAppViewController.h */,
+				415EC3531C7B414A003DF7B9 /* SPDevelopmentAppViewController.m */,
+				418D92781C4E8B65006DAFE8 /* SPConstants.h */,
+				418D92791C4E8B65006DAFE8 /* SPConstants.m */,
+				418D927A1C4E8B65006DAFE8 /* third-party */,
+				418D927D1C4E8B65006DAFE8 /* views */,
+			);
+			path = SiphonSDK;
+			sourceTree = "<group>";
+		};
+		418D92611C4E8B65006DAFE8 /* bundle */ = {
+			isa = PBXGroup;
+			children = (
+				418D92621C4E8B65006DAFE8 /* SPBundleManager.h */,
+				418D92631C4E8B65006DAFE8 /* SPBundleManager.m */,
+				418D92641C4E8B65006DAFE8 /* SPBundleUtils.h */,
+				418D92651C4E8B65006DAFE8 /* SPBundleUtils.m */,
+			);
+			path = bundle;
+			sourceTree = "<group>";
+		};
+		418D92661C4E8B65006DAFE8 /* file-utils */ = {
+			isa = PBXGroup;
+			children = (
+				418D92671C4E8B65006DAFE8 /* FileHash.h */,
+				418D92681C4E8B65006DAFE8 /* FileHash.m */,
+				418D92691C4E8B65006DAFE8 /* SPFileSystem.h */,
+				418D926A1C4E8B65006DAFE8 /* SPFileSystem.m */,
+			);
+			path = "file-utils";
+			sourceTree = "<group>";
+		};
+		418D926B1C4E8B65006DAFE8 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				418D926C1C4E8B65006DAFE8 /* SPApiClient.h */,
+				418D926D1C4E8B65006DAFE8 /* SPApiClient.m */,
+				418D926E1C4E8B65006DAFE8 /* SPLogStreamClient.h */,
+				418D926F1C4E8B65006DAFE8 /* SPLogStreamClient.m */,
+				418D92701C4E8B65006DAFE8 /* SPNotificationStreamClient.h */,
+				418D92711C4E8B65006DAFE8 /* SPNotificationStreamClient.m */,
+				418D92721C4E8B65006DAFE8 /* SPPollingClient.h */,
+				418D92731C4E8B65006DAFE8 /* SPPollingClient.m */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		418D927A1C4E8B65006DAFE8 /* third-party */ = {
+			isa = PBXGroup;
+			children = (
+				418D927B1C4E8B65006DAFE8 /* RNMixpanelManager.h */,
+				418D927C1C4E8B65006DAFE8 /* RNMixpanelManager.m */,
+			);
+			path = "third-party";
+			sourceTree = "<group>";
+		};
+		418D927D1C4E8B65006DAFE8 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				415EC3831C7BC16A003DF7B9 /* SPAlertView.m */,
+				415EC3811C7BC15F003DF7B9 /* SPAlertView.h */,
+				415EC34F1C7B412A003DF7B9 /* SPUpdatingView.m */,
+				415EC34D1C7B411E003DF7B9 /* SPUpdatingView.h */,
+				418D927E1C4E8B65006DAFE8 /* SPAppView.h */,
+				418D927F1C4E8B65006DAFE8 /* SPAppView.m */,
+				418D92801C4E8B65006DAFE8 /* SPLoadingView.h */,
+				418D92811C4E8B65006DAFE8 /* SPLoadingView.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		418D92901C4E90EB006DAFE8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				418D92911C4E90F9006DAFE8 /* pre-header */,
+				4193E5571C5BBB22005563CE /* header */,
+				417969D01CC11B5F005A22C8 /* header-dev */,
+				41152B341C5107BB005A718F /* sandbox-header */,
+				417969D11CC11B66005A22C8 /* sandbox-header-dev */,
+				418D92951C4E9173006DAFE8 /* PrefixHeader.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E88E46CA1D7934AD414BAF34 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45B17B076767F9EAA6D5813E /* Pods-SiphonSDK.debug.xcconfig */,
+				58CE61E3DECCCE9DA1691EE9 /* Pods-SiphonSDK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		41EEE6761C4F8EEC00F4C543 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41EEE67D1C4FB70C00F4C543 /* SPAppViewController.h in Headers */,
+				415EC3551C7B44CF003DF7B9 /* SPDevelopmentAppViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		418D92241C4E8417006DAFE8 /* SiphonSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 418D922E1C4E8417006DAFE8 /* Build configuration list for PBXNativeTarget "SiphonSDK" */;
+			buildPhases = (
+				284B05FFF6C021FE10AAFB47 /* Check Pods Manifest.lock */,
+				418D92211C4E8417006DAFE8 /* Sources */,
+				418D92221C4E8417006DAFE8 /* Frameworks */,
+				418D92231C4E8417006DAFE8 /* CopyFiles */,
+				F669568E5E8CF8C81A94E95C /* Copy Pods Resources */,
+				41EEE6761C4F8EEC00F4C543 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiphonSDK;
+			productName = SiphonSDK;
+			productReference = 418D92251C4E8417006DAFE8 /* libSiphonSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		418D921D1C4E8417006DAFE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Siphon;
+				TargetAttributes = {
+					418D92241C4E8417006DAFE8 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 87AQ93YWX4;
+					};
+					41EEE6781C4F933800F4C543 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 87AQ93YWX4;
+					};
+				};
+			};
+			buildConfigurationList = 418D92201C4E8417006DAFE8 /* Build configuration list for PBXProject "SiphonSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 418D921C1C4E8417006DAFE8;
+			productRefGroup = 418D92261C4E8417006DAFE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				418D92241C4E8417006DAFE8 /* SiphonSDK */,
+				41EEE6781C4F933800F4C543 /* UniversalLib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		284B05FFF6C021FE10AAFB47 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		41EEE67C1C4F945100F4C543 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target SiphonSDK ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target SiphonSDK -configuration ${CONFIGURATION} -sdk iphonesimulator BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/SiphonSDKHeaders\" \"${UNIVERSAL_OUTPUTFOLDER}/\"";
+		};
+		F669568E5E8CF8C81A94E95C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SiphonSDK/Pods-SiphonSDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		418D92211C4E8417006DAFE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				418D92871C4E8B65006DAFE8 /* SPLogStreamClient.m in Sources */,
+				418D928E1C4E8B65006DAFE8 /* SPAppView.m in Sources */,
+				415EC3541C7B414A003DF7B9 /* SPDevelopmentAppViewController.m in Sources */,
+				418D928F1C4E8B65006DAFE8 /* SPLoadingView.m in Sources */,
+				418D92831C4E8B65006DAFE8 /* SPBundleUtils.m in Sources */,
+				418D92861C4E8B65006DAFE8 /* SPApiClient.m in Sources */,
+				418D928C1C4E8B65006DAFE8 /* SPConstants.m in Sources */,
+				415EC3841C7BC16A003DF7B9 /* SPAlertView.m in Sources */,
+				415EC3501C7B412A003DF7B9 /* SPUpdatingView.m in Sources */,
+				415EC3891C7BC179003DF7B9 /* SPBorderedButton.m in Sources */,
+				418D92891C4E8B65006DAFE8 /* SPPollingClient.m in Sources */,
+				418D92851C4E8B65006DAFE8 /* SPFileSystem.m in Sources */,
+				418D928A1C4E8B65006DAFE8 /* SPAppManager.m in Sources */,
+				418D928D1C4E8B65006DAFE8 /* RNMixpanelManager.m in Sources */,
+				418D92821C4E8B65006DAFE8 /* SPBundleManager.m in Sources */,
+				418D92881C4E8B65006DAFE8 /* SPNotificationStreamClient.m in Sources */,
+				418D92841C4E8B65006DAFE8 /* FileHash.m in Sources */,
+				418D928B1C4E8B65006DAFE8 /* SPAppViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		418D922C1C4E8417006DAFE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		418D922D1C4E8417006DAFE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		418D922F1C4E8417006DAFE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45B17B076767F9EAA6D5813E /* Pods-SiphonSDK.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				DEAD_CODE_STRIPPING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SiphonSDK/Supporting Files/PrefixHeader.pch";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-iquote",
+					"\"$CONFIGURATION_BUILD_DIR/Mixpanel.framework/Headers\"",
+					"-iquote",
+					"\"$CONFIGURATION_BUILD_DIR/React.framework/Headers\"",
+					"-iquote",
+					"\"$CONFIGURATION_BUILD_DIR/SSZipArchive.framework/Headers\"",
+					"-iquote",
+					"\"$CONFIGURATION_BUILD_DIR/SocketRocket.framework/Headers\"",
+					"-fembed-bitcode",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fembed-bitcode",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Debug;
+		};
+		418D92301C4E8417006DAFE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58CE61E3DECCCE9DA1691EE9 /* Pods-SiphonSDK.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				DEAD_CODE_STRIPPING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SiphonSDK/Supporting Files/PrefixHeader.pch";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-iquote",
+					"\"$CONFIGURATION_BUILD_DIR/Mixpanel.framework/Headers\"",
+					"-iquote",
+					"\"$CONFIGURATION_BUILD_DIR/React.framework/Headers\"",
+					"-iquote",
+					"\"$CONFIGURATION_BUILD_DIR/SSZipArchive.framework/Headers\"",
+					"-iquote",
+					"\"$CONFIGURATION_BUILD_DIR/SocketRocket.framework/Headers\"",
+					"-fembed-bitcode",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fembed-bitcode",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Release;
+		};
+		41EEE67A1C4F933800F4C543 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SiphonSDK/Supporting Files/PrefixHeader.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Debug;
+		};
+		41EEE67B1C4F933800F4C543 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SiphonSDK/Supporting Files/PrefixHeader.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		418D92201C4E8417006DAFE8 /* Build configuration list for PBXProject "SiphonSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				418D922C1C4E8417006DAFE8 /* Debug */,
+				418D922D1C4E8417006DAFE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		418D922E1C4E8417006DAFE8 /* Build configuration list for PBXNativeTarget "SiphonSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				418D922F1C4E8417006DAFE8 /* Debug */,
+				418D92301C4E8417006DAFE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41EEE6791C4F933800F4C543 /* Build configuration list for PBXAggregateTarget "UniversalLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41EEE67A1C4F933800F4C543 /* Debug */,
+				41EEE67B1C4F933800F4C543 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 418D921D1C4E8417006DAFE8 /* Project object */;
+}

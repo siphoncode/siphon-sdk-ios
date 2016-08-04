@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "203DE17DB5C26A3A6D5A4B495C871DB6E0C0BC80",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "203DE17DB5C26A3A6D5A4B495C871DB6E0C0BC80" : 0,
+    "1FA15AA079847C2EC73F23F186554F5952B127BF" : 0,
+    "CABB1078D46205F74460A202C5ECBA47AFFF85C0" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E171A49F-5596-445B-81A8-23FFB153F9ED",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "203DE17DB5C26A3A6D5A4B495C871DB6E0C0BC80" : "siphon-sdk-ios\/",
+    "1FA15AA079847C2EC73F23F186554F5952B127BF" : "siphon-packager\/",
+    "CABB1078D46205F74460A202C5ECBA47AFFF85C0" : "siphon-base\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Siphon",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Example\/Siphon.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:getsiphon\/siphon-packager.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1FA15AA079847C2EC73F23F186554F5952B127BF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:getsiphon\/siphon-sdk-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "203DE17DB5C26A3A6D5A4B495C871DB6E0C0BC80"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:getsiphon\/siphon-base.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CABB1078D46205F74460A202C5ECBA47AFFF85C0"
+    }
+  ]
+}

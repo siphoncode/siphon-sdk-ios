@@ -1,0 +1,6 @@
+framework module Siphon {
+  umbrella header "Siphon-umbrella.h"
+
+  export *
+  module * { export * }
+}
